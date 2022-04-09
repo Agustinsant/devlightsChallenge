@@ -1,13 +1,223 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
+  color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+nav {
+  width: 100%;
+}
+
+.cart_btn {
+  background: none;
+  border: none;
+  color: rgb(255, 40, 147);
+  font-size: 26px;
+  transition: 200ms ease-in-out;
+}
+
+.cart_btn:hover {
+  cursor: pointer;
+  color: rgb(225, 250, 0);
+  transition: 200ms ease-in-out;
+}
+
+.menu_btn:hover {
+  cursor: pointer;
+  color: rgb(255, 40, 147);
+  transition: 200ms ease-in-out;
+}
+
+.logo {
+  max-width: 140px;
+}
+.logo > img {
+  width: 100%;
+}
+.nav_container {
+  width: 1080px;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_container {
+  width: 500px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://cdn1.epicgames.com/offer/95e09a8c24c44684bca1a6f25aea920c/EGS_EvilDeadTheGame_SaberInteractiveInc_S1_2560x1440-fde136bc32f2b93006b9df0bc421fec0);
+  background-size: cover;
+}
+
+.search_form {
+  margin: 80px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+  height: 60px;
+  padding: 10px;
+  border: 2px solid;
+  border-image: linear-gradient(
+      90deg,
+      rgba(225, 250, 0, 1) 0%,
+      rgba(214, 15, 175, 1) 48%,
+      rgb(110, 6, 190) 100%
+    )
+    1;
+}
+
+.search_form button {
+  background: none;
+  border: none;
+}
+
+.search_icon {
+  margin-right: 5px;
+  margin-top: 5px;
+  color: rgb(255, 40, 147);
+  font-size: 42px;
+  transition: 200ms ease-in-out;
+}
+
+.search_icon:hover {
+  cursor: pointer;
+  color: rgb(225, 250, 0);
+  transition: 200ms ease-in-out;
+}
+
+.search_form input {
+  background: none;
+  color: rgb(255, 40, 147);
+  padding: 10px;
+  font-size: 22px;
+  border: none;
+  width: 85%;
+}
+
+.search_form input:focus {
+  border: none;
+  outline: none;
+}
+
+.content_container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 340px;
+  height: 450px;
+  padding: 40px;
+  margin: 10px;
+  outline: none;
+  border-radius: 20px;
+  transition: 200ms ease-in-out;
+}
+
+.card_container:hover {
+  outline: 1px solid rgb(250, 19, 146);
+  border-radius: 20px;
+  transition: 200ms ease-in-out;
+}
+
+.card_title {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.card_container img {
+  width: 100%;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating > p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.discountPin {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: crimson;
+}
+
+.discountPin > p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.price_container {
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  width: 260px;
+  height: 65px;
+  background: linear-gradient(
+    45deg,
+    rgba(225, 250, 0, 1) 0%,
+    rgba(214, 15, 175, 1) 48%,
+    rgb(110, 6, 190) 100%
+  );
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.price_container > h3 {
+  text-decoration: line-through;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(27, 27, 27);
 }
